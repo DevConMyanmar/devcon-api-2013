@@ -1,8 +1,8 @@
-class Test
+class AdminUser
   include Mongoid::Document
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable, 
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
@@ -39,6 +39,4 @@ class Test
 
   ## Token authenticatable
   # field :authentication_token, :type => String
-
-  field :name, type: String
 end

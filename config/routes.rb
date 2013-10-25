@@ -1,13 +1,20 @@
 Devconapi::Application.routes.draw do
-  resources :speakers
 
-  resources :schedules
-  resources :test
+  devise_for :tests
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
+  namespace :api do
+    namespace :v1 do
+      resources :schedules
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  root to: "schedules#index"
+  root to: "test#index"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

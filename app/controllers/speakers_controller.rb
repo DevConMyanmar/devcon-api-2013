@@ -3,10 +3,6 @@ class SpeakersController < ApplicationController
   # GET /speakers.json
   def index
     @speakers = Speaker.all
-
-    respond_to do |format|
-      format.json { render json: @speakers }
-    end
   end
 
   # GET /speakers/1
