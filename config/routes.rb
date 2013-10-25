@@ -2,9 +2,12 @@ Devconapi::Application.routes.draw do
   resources :speakers
 
   resources :schedules
+  resources :test
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
+
+  root to: "schedules#index"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

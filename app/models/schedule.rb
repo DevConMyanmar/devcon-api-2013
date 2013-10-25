@@ -8,4 +8,6 @@ class Schedule
   field :session_time, type: String
   field :date, type: String
   field :talk_type, type: String
+
+  has_many :speakers
 end
