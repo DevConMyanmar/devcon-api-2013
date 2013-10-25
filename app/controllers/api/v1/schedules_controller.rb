@@ -5,7 +5,6 @@ module Api
 
       def index
         @schedules = Schedule.all
-        render :json => @schedules.to_json, :status => 200 and return
       end
 
     end
