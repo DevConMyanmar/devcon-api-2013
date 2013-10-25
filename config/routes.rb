@@ -3,7 +3,7 @@ Devconapi::Application.routes.draw do
 
   resources :schedules
 
-  root 'schedules#index.json'
+  root "schedule"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
