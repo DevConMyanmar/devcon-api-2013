@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  desc: MyText
+  session_time: MyString
+  date: MyString
+  talk_type: MyString
+
+two:
+  title: MyString
+  desc: MyText
+  session_time: MyString
+  date: MyString
+  talk_type: MyString

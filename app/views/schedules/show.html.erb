@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @schedule.title %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%= @schedule.desc %>
+</p>
+
+<p>
+  <b>Session time:</b>
+  <%= @schedule.session_time %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @schedule.date %>
+</p>
+
+<p>
+  <b>Talk type:</b>
+  <%= @schedule.talk_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>
