@@ -1,9 +1,9 @@
 Devconapi::Application.routes.draw do
   resources :speakers
 
-
   resources :schedules
 
+  root 'schedules#index.json'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
