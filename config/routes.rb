@@ -1,5 +1,7 @@
 Devconapi::Application.routes.draw do
 
+  devise_for :admins
+
   # API namespace start here
   namespace :api, defaults: { :format => 'json' } do
     namespace :v1 do
