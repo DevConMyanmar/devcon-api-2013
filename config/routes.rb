@@ -1,5 +1,6 @@
 Devconapi::Application.routes.draw do
 
+  # API namespace start here
   namespace :api, defaults: { :format => 'json' } do
     namespace :v1 do
       resources :schedules
@@ -7,6 +8,7 @@ Devconapi::Application.routes.draw do
     end
   end
 
-  root :to => "api/v1/speakers#index" , defaults: { :format => 'json' }
+  # root to spaker list
+  root :to => "home#index"
 
 end

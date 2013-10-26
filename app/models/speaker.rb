@@ -6,5 +6,5 @@ class Speaker
   field :bio, type: String
   field :photo, type: String
 
-  belongs_to :schedule
+  has_and_belongs_to_many :schedules
 end
