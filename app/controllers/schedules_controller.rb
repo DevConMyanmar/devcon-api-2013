@@ -11,11 +11,6 @@ class SchedulesController < ApplicationController
   # GET /schedules/1.json
   def show
     @schedule = Schedule.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @schedule }
-    end
   end
 
   # GET /schedules/new
