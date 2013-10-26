@@ -7,4 +7,5 @@ class Speaker
   field :photo, type: String
 
   has_and_belongs_to_many :schedules
+
 end
