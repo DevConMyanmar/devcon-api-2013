@@ -5,6 +5,7 @@ class Speaker
   field :email, type: String
   field :bio, type: String
   field :photo, type: String
+  field :job_title, type: String
 
   has_and_belongs_to_many :schedules
 
