@@ -1,0 +1,2 @@
+module TalktypesHelper
+end

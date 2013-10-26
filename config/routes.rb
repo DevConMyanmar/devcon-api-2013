@@ -7,6 +7,7 @@ Devconapi::Application.routes.draw do
     namespace :v1 do
       resources :schedules
       resources :speakers
+      resources :talktypes
     end
   end
 
