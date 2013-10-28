@@ -1,2 +1,0 @@
-Running `AdminUser.create :email = :password = :password_confirmation =` attached to terminal... up, run.6862
-bash: AdminUser.create: command not found
