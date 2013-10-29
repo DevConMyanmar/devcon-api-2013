@@ -1,24 +1,11 @@
 development:
-  # Configure available database sessions. (required)
   sessions:
-    # Defines the default session. (required)
     default:
-      # Defines the name of the default database that Mongoid can connect to.
-      # (required).
       database: devconapi_development
-      # Provides the hosts the default session can connect to. Must be an array
-      # of host:port pairs. (required)
       hosts:
         - localhost:27017
       options:
-        # Change whether the session persists in safe mode by default.
-        # (default: false)
-        # safe: false
-
-        # Change the default consistency model to :eventual or :strong.
-        # :eventual will send reads to secondaries, :strong sends everything
-        # to master. (default: :eventual)
-        # consistency: :eventual
+        consistency: :strong
 
         # How many times Moped should attempt to retry an operation after
         # failure. (default: 30)
@@ -27,7 +14,7 @@ development:
         # The time in seconds that Moped should wait before retrying an
         # operation on failure. (default: 1)
         # retry_interval: 1
-  # Configure Mongoid specific options. (optional)
+
   options:
     # Configuration for whether or not to allow access to fields that do
     # not have a field definition on the model. (default: true)
@@ -62,10 +49,10 @@ development:
     # skip_version_check: false
 
     # User Active Support's time zone in conversions. (default: true)
-    # use_activesupport_time_zone: true
+    use_activesupport_time_zone: false
 
-    # Ensure all times are UTC in the app side. (default: false)
-    # use_utc: false
+    use_utc: true
+
 test:
   sessions:
     default:

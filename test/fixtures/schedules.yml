@@ -2,14 +2,12 @@
 
 one:
   title: MyString
-  desc: MyText
-  session_time: MyString
-  date: MyString
-  talk_type: MyString
+  desc: MyString
+  session_time: 2013-10-29 00:39:45
+  session_date: 2013-10-29
 
 two:
   title: MyString
-  desc: MyText
-  session_time: MyString
-  date: MyString
-  talk_type: MyString
+  desc: MyString
+  session_time: 2013-10-29 00:39:45
+  session_date: 2013-10-29
