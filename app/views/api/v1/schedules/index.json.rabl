@@ -5,3 +5,5 @@ attributes :speaker_ids => :speakers
 attributes :id => :schedule_id
 attributes :desc => :description
 attributes :talktype_ids => :talktype
+
+node(:id) { |o| :id.to_s }

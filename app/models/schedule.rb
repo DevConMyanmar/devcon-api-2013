@@ -7,6 +7,7 @@ class Schedule
   field :session_time, type: Time
   field :session_date, type: Date
 
+  has_many :talktype
   has_and_belongs_to_many :speakers
-  has_many :talktypes
+
 end
