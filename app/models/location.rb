@@ -7,5 +7,5 @@ class Location
   field :color, type: String
 
 
-  has_and_belongs_to_many :schedules
+  has_many :schedules
 end
