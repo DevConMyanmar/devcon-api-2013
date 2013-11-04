@@ -3,5 +3,5 @@ class Talktype
 
   field :name, type: String
 
-  belongs_to :schedules
+  has_and_belongs_to_many :schedule
 end

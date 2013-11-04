@@ -1,5 +1,8 @@
 Devconapi::Application.routes.draw do
 
+  resources :locations
+
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   # ActiveAdmin.routes(self)
 
@@ -9,6 +12,7 @@ Devconapi::Application.routes.draw do
       resources :schedules
       resources :speakers
       resources :talktypes
+      resources :locations
     end
   end
 
