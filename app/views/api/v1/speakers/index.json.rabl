@@ -1,6 +1,6 @@
 object @speakers
 
-attributes :id, :name, :job_title, :email, :bio, :photo
+attributes :id, :name, :job_title, :bio, :photo
 
 node(:schedule_ids) { |e| e.schedule_ids.to_s }
 
