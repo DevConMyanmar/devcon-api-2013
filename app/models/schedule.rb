@@ -9,6 +9,6 @@ class Schedule
 
   belongs_to :talktype
   belongs_to :location
-  has_and_belongs_to_many :speaker
+  has_and_belongs_to_many :speakers
 
 end
