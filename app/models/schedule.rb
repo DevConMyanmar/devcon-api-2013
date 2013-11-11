@@ -7,7 +7,7 @@ class Schedule
   field :session_time, type: Time
   field :session_date, type: Date
 
-  belongs_to :talktype
+  has_and_belongs_to_many :talktypes
   belongs_to :location
   has_and_belongs_to_many :speakers
 
