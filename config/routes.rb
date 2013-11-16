@@ -1,12 +1,14 @@
 Devconapi::Application.routes.draw do
 
-  resources :locations
+  resources :feedbacks
 
+  resources :locations
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   # ActiveAdmin.routes(self)
 
   # API namespace start here
+
   namespace :api, defaults: { :format => 'json' } do
     namespace :v1 do
       resources :schedules
@@ -15,7 +17,6 @@ Devconapi::Application.routes.draw do
       resources :locations
     end
   end
-
 
   root :to => "home#index"
 

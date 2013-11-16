@@ -13,4 +13,3 @@ ActiveAdmin.register Schedule do
     f.actions
   end
 
-end
