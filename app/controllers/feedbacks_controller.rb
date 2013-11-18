@@ -4,7 +4,7 @@ class FeedbacksController < InheritedResources::Base
   end
 
   def show
-    @feedback = Feedback.find(params[:id)
+    @feedback = Feedback.find(params[:id])
   end
 
   def new
