@@ -5,7 +5,7 @@ module Api
       respond_to :json
 
       def index
-        @schedules = Schedule.all
+        @schedules = Schedule.all.order_by("session_time asc")
       end
 
     end
